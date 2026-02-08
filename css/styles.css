@@ -1,0 +1,284 @@
+/* =================================
+   CSS Styles for Workshop 01
+   ================================= */
+
+/* TODO Task 2: Add your general styles here */
+
+/* Reset and Base Styles */
+* {
+    /* Add your reset styles here (margin, padding, box-sizing) */
+
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: open-sans, sans-serif;
+    color:rgb(51, 2, 2);
+    padding-left: 30px;
+    font-size: 140%;
+        /* Add body styles:  font-family, background-color, color, etc. */
+
+}
+
+/* TODO Task 2: Style your headings */
+h1 {
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(11, 95, 67);
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    margin-bottom: 10px;
+    
+     /* Add styles for your main heading (h1) */
+}
+
+h2 {
+    padding: 10px;
+    border-radius: 30px;
+    
+    color: white;
+    background-color: rgb(70, 138, 15);
+    border-right: 3px solid black;
+    display: block;
+    width: fit-content;
+    margin-top: 0;
+
+}
+
+/* TODO Task 2: Style your paragraphs */
+p {
+    font-family: open-sans, sans-serif;
+    font-size: 18px;
+    max-height: fit-content;
+
+}
+
+/* TODO Task 2: Style your images */
+img {
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: rgb(240, 130, 130);
+    max-width: 400px;
+     /* Add styles for your images (e.g., border, border-radius, max-width) */
+}
+
+/* TODO Task 3: Navigation Styles */
+nav {
+    
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(70, 138, 15);
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    /* Display items horizontally */
+}
+
+nav a {
+     color:aliceblue;
+     text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+     /* Add hover effect for links */
+
+
+/* Main Content Styles */
+main {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+section {
+    /* Add spacing between sections */
+}
+
+/* TODO Task 4: Form Styles */
+form {
+    padding-top: 15px;
+     max-width: fit-content;
+}
+
+label {
+    
+}
+
+input,
+textarea {
+    max-width: fit-content;
+    border-radius: 15px;
+     border: 2px rgb(11, 95, 67) solid;
+     padding: 10px;
+     font-size: 16px;
+     
+}
+
+
+button,
+input[type="submit"] {
+    background-color: rgb(11, 95, 67);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Style the submit button */
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: rgb(70, 138, 15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition-duration: 0.3s;
+    /* Add hover effect for button */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid rgb(11, 95, 67);
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(11, 95, 67);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: rgb(70, 138, 15);
+    transform: scale(1.2);
+}
+
+/* TODO Task 5: Media Queries for Responsive Design */
+/* Tablet styles (optional) */
+@media (max-width: 768px) {
+
+    nav ul {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+    
+
+    body {
+        padding: 10px;
+    }
+    
+    form {
+        padding-top: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+
+    nav ul {
+        display: block;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    
+
+    h1 {
+        font-size: 20px;
+        padding: 12px;
+        margin-bottom: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        padding: 6px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    body {
+        padding: 5px;
+    }
+    
+    form {
+        padding-top: 8px;
+    }
+    
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

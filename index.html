@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Add a descriptive title for your page -->
+    <title>Niko's Website ws01</title> 
+ 
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- TODO Task 3: Add navigation menu here -->
+     <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    <h1>Workshop 01: Web Basics</h1>
+    
+    <!-- TODO Task 1: Add your main content here -->
+    <!-- Use  h2, p, and img tags -->
+     <h2>Welcome to my practice page</h2>
+     <p>My name is Niko and I am a student at Laurea. <br> I study full-time and on my free-time I like partaking in my hobbies. <br>
+        I have a cat named Alvar. Here, I have attached an image of him!</p>
+     <button id="button1" onclick="toggleImage()">Show Image</button>
+     <img id="Alvar" src="./images/alvar.jpg" alt="My cat" width="300" height="400" style="display: none;">
+
+    <main>
+        <section id="home">
+            <!-- Add your heading, subheading, paragraph, and image here -->
+            
+        </section>
+        
+        <!-- TODO Task 1 & 3: Add an about section -->
+        <section id="about">
+            
+        </section>
+        
+        <!-- TODO Task 4: Add contact form section here -->
+        <section id="contact">
+            <form>
+                <label for="name">Name: <span style="color: red;">*</span></label><br>
+                <input type="text" id="name" name="name" required placeholder="Your name here..."><br><br>
+                
+                <label for="email">Email: <span style="color: red;">*</span></label><br>
+                <input type="email" id="email" name="email" required placeholder="example.email@net"><br><br>
+                
+                <label for="message">Message: <span style="color: red;">*</span></label><br>
+                <textarea type="message" name="message" required placeholder="Your message..."></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+                <p style="font-size: 65%; opacity: 95%;"><span style="color: red;">*</span> = Required field</p>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Optional: Add a footer -->
+    <footer> 
+        <div class="social-media">
+            <a href="https://www.discord.com/" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/nikosari" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p style="font-size: 50%;">&copy; 2024 Niko's Website. All rights reserved.</p>
+    </footer>
+
+    <script> // js for the image toggle button
+        function toggleImage() {
+            const image = document.getElementById('Alvar');
+            const button = document.getElementById('button1');
+            
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+                button.textContent = 'Hide Image';
+            } else {
+                image.style.display = 'none';
+                button.textContent = 'Show Image';
+            }
+        }
+    </script>
+</body>
+</html>
